@@ -20,20 +20,7 @@ data class MovieEntity(
 
     val posterUrl: String?,
     val backdropUrl: String?,
-
-    /*
-        Čuvamo id-jeve žanrova kao tekst, npr:
-        |28|12|878|
-
-        Tako možemo kroz SQL da proverimo da li film ima žanr:
-        genresText LIKE '%|28|%'
-    */
     val genresText: String,
-
-    /*
-        Kasnije za kviz "Guess Lead Actor".
-        Za sada može biti prazan tekst, a kad otvorimo details upisaćemo cast.
-    */
     val castText: String,
 
     val languageCode: String?,
